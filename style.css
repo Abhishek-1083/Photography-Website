@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+#main_box{
+    height: 100vh;
+    background: url(photo.jpg);
+    background-size: cover;
+}
+
+.btn_one i{
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    position: absolute;
+    left: 16px;
+    line-height: 60px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+.sidebar{
+    background-color: rgba(255, 255, 255, 0.1);
+    position: fixed;
+    left: -300px;
+    width: 300px;
+    height: 100vh;
+    box-shadow: 0px 0px 6px rgba(255, 255, 255, 0.5);
+    transition: all 0.3s linear;
+}
+
+.sidebar .logo{
+    position: absolute;
+    width: 100%;
+    line-height: 60px;
+    box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.5);
+    height: 60px;
+}
+
+span{
+    color:red;
+}
+
+.sidebar .logo a{
+    position: absolute;
+    left: 50px;
+    top: 13px;
+    font-size: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
+}
+
+.btn_two{
+     position: absolute;
+     left: 270px;
+     font-size: 25px;
+     line-height: 60px;
+     /* opacity: 0; */
+     color: gray;
+}
+
+.btn_two i{
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+.menu{
+    position: absolute;
+    top: 80px;
+    width: 100%;
+}
+
+.sidebar .menu li{
+    padding: 10px 20px 10px 20px;
+    margin-top: 6px;
+}
+
+.sidebar .menu li i,a{
+    font-size: 20px;
+    padding: 10px;
+    line-height: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar .social_media{
+    position: absolute;
+    bottom: 50px;
+    left: 40px;
+}
+
+.sidebar .social_media i{
+    font-size: 20px;
+    color: white;
+    opacity: 0.5;
+    padding: 0px;
+}
+
+#check{
+    display: none;
+}
+
+.sidebar .menu li:hover{
+    box-shadow: 0px 0px 6px rgba(255, 255, 255, 0.5);
+}
+
+.btn_one i:hover{
+    font-size: 40px;
+}
+.btn_two i:hover{
+    font-size: 32px;
+}
+
+.social_media i:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+#check:checked ~ .sidebar{
+    left: 0;
+}
+#check:checked ~ .btn_one{
+    opacity: 0;
+}
